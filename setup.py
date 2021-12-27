@@ -4,7 +4,7 @@ import pathlib
 
 here = pathlib.Path(__file__).parent.resolve()
 
-VERSION = '0.0.1'
+VERSION = '0.0.3'
 DESCRIPTION = 'Raccoon Simple StopWatch'
 LONG_DESCRIPTION = here.joinpath("raccoon_simple_stopwatch").joinpath("readme.md").read_text(encoding='utf-8')
 
@@ -18,7 +18,11 @@ setup(
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
-    install_requires=[],
+    url="https://github.com/brenordv/simple-stopwatch-package",
+    project_urls={
+        "Bug Tracker": "https://github.com/brenordv/simple-stopwatch-package/issues",
+    },
+    install_requires=['pytz'],
     keywords=['python', 'stopwatch', 'timer', 'elapsed'],
     classifiers=[
         "Development Status :: 4 - Beta",

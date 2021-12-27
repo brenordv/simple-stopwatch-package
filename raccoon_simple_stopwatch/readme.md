@@ -18,6 +18,8 @@ code all around.
 
 The default elapsed time format is `DAYS.HOURS:MINUTES:SECONDS.MS`
 
+
+
 # Examples
 ## 01. Creating new stopwatch
 
@@ -165,3 +167,9 @@ None
 None
 2021-12-23 20:41:56.415212-03:00 | E. South America Standard Time
 ```
+
+
+
+# Useful links
+- https://github.com/brenordv/simple-stopwatch-package
+- https://pypi.org/project/raccoon-simple-stopwatch
