@@ -6,16 +6,20 @@ The default elapsed time format is `DAYS.HOURS:MINUTES:SECONDS.MS`
 
 # Examples
 ## 01. Creating new stopwatch
+
 ```python
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
+
 sw = StopWatch()
 ```
 The snippet above shows how to instantiate a StopWatch. Creating an instance like this will not start the stopwatch. 
 
 
 ## 02. Creating new stopwatch
+
 ```python
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
+
 sw = StopWatch(True)
 
 # or
@@ -25,9 +29,10 @@ The snippet above shows how to instantiate a StopWatch. Creating an instance lik
 
 
 ## 03. Getting the final elapsed time
+
 ```python
 import time
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
 
 sw = StopWatch(True)
 time.sleep(10)
@@ -42,9 +47,10 @@ This snippet auto starts the stopwatch, waits for 10 seconds, stops it and then 
 
 
 ## 04. Getting current/partial elapsed time
+
 ```python
 import time
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
 
 sw = StopWatch(True)
 for i in range(10):
@@ -70,9 +76,10 @@ Total Elapsed time: 0:00:10.115585
 This snippet auto starts the stopwatch, gets the partial elapsed time 10 times during 10 seconds, stops it and then gets the total elapsed time.
 
 ## 05. Getting current/partial elapsed time in timedelta format
+
 ```python
 import time
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
 
 sw = StopWatch(True)
 for i in range(10):
@@ -100,8 +107,9 @@ and then we call `total_seconds()` functions to get the elapsed time in seconds.
 
 
 ## 06. Getting the moment when the stopwatch started (UTC and local)
+
 ```python
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
 
 sw = StopWatch()  # Local datetime
 print(sw.start_datetime)
@@ -123,8 +131,9 @@ None
 > Note: All examples involving **start_datetime** can also be applied to **stop_datetime**.
 
 ## 07. Getting the moment when the stopwatch started, making the datetime timezone aware.
+
 ```python
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
 
 sw = StopWatch(use_utc=True, make_tz_aware=True)
 print(sw.start_datetime)

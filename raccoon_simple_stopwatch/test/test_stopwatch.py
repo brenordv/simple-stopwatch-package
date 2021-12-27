@@ -5,7 +5,7 @@ from datetime import timedelta, datetime
 
 import pytz
 
-from simple_stopwatch.stopwatch import StopWatch
+from raccoon_simple_stopwatch.stopwatch import StopWatch
 
 
 class InitialStateTests(unittest.TestCase):

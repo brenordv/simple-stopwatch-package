@@ -5,12 +5,12 @@ import pathlib
 here = pathlib.Path(__file__).parent.resolve()
 
 VERSION = '0.0.1'
-DESCRIPTION = 'Simple StopWatch'
-LONG_DESCRIPTION = here.joinpath("simple_stopwatch").joinpath("readme.md").read_text(encoding='utf-8')
+DESCRIPTION = 'Raccoon Simple StopWatch'
+LONG_DESCRIPTION = here.joinpath("raccoon_simple_stopwatch").joinpath("readme.md").read_text(encoding='utf-8')
 
 # Setting up
 setup(
-    name="simple_stopwatch",
+    name="raccoon_simple_stopwatch",
     version=VERSION,
     author="Breno RdV",
     author_email="hello@raccoon.ninja",
