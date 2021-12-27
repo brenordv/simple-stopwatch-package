@@ -1,4 +1,4 @@
-name: quality-assurance
+name: Build
 
 on:
   push:
