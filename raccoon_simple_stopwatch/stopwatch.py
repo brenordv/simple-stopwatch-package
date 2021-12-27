@@ -118,14 +118,3 @@ class StopWatch(object):
         self._end_timer = timer()
 
         return self.elapsed(raw=raw)
-
-
-if __name__ == '__main__':
-    sw = StopWatch()
-    print(sw.start_datetime)
-    sw.start()
-    print(f"{sw.start_datetime} | {sw.start_datetime.tzinfo}")
-    sw2 = StopWatch(use_utc=True)
-    print(sw2.start_datetime)
-    sw2.start()
-    print(f"{sw2.start_datetime} | {sw2.start_datetime.tzinfo}")
