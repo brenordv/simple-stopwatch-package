@@ -37,6 +37,12 @@ jobs:
       continue-on-error: true
       run: |
         pylint raccoon_simple_stopwatch
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage
+        path: htmlcov
+
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
       env:
