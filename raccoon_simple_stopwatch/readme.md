@@ -20,6 +20,13 @@ The default elapsed time format is `DAYS.HOURS:MINUTES:SECONDS.MS`
 
 
 
+# Installation
+```shell
+pip install -U raccoon-simple-stopwatch
+```
+
+
+
 # Examples
 ## 01. Creating new stopwatch
 
